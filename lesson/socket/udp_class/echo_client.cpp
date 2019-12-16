@@ -15,7 +15,7 @@ int main()
         }
         string buff;
         client.RecvFrom(&buff);
-        printf("buff:\n",buff.c_str());
+        printf("buff:%s\n",buff.c_str());
     }
     return 0;
 }
