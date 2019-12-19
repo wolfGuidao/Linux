@@ -6,7 +6,7 @@ void HttpProcess(const string& req,string* resp)
     //无论用户的请求是什么，都返回hello world
     (void)req;
     string first_line="HTTP/1.1 200 ok\n";
-    string body="<html><div><李向阳是个沙雕</div></html>";
+    string body="<html><head>hello worlf</div></head></html>"; 
     string header = "Content-Type: text/html\nContent-Length:"+to_string(body.size())+"\n";
     *resp=first_line + header + "\n" + body;
 }

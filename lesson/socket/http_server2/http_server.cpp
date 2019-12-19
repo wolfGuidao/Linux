@@ -9,7 +9,7 @@ void HttpProcess(const string& req,string* resp)
     string header= "Location:http://www.baidu.com\n"
         "Content-Type:text/html\n"
         "Content-Length:10\n";
-    string body="李向阳是个憨憨哈哈哈\n";
+    string body="hello world\n";
     *resp=first_line + header + "\n" + body;
 }
 
