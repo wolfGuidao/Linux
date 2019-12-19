@@ -1,4 +1,4 @@
-FLAG=-std=c++14 -L/usr/lib64/mysql -lmysqlclient -ljsoncpp -lpthread
+FLAG=-std=c++11 -L/usr/lib64/mysql -lmysqlclient -ljsoncpp -lpthread
 
 .PHONY:all
 all:db_test blog_server
