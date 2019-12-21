@@ -23,6 +23,7 @@ namespace blog_system
            return NULL;
        }
 
+       printf("server is ok!\n");
        //3.设定字符编码
        mysql_set_character_set(connect_fd,"utf8");
        return connect_fd;
