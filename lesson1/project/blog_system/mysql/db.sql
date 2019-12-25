@@ -1,4 +1,4 @@
-drop database blog_system;
+drop database if exists blog_system;
 create database blog_system;
 use blog_system;
 
