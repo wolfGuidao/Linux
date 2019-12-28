@@ -8,7 +8,7 @@ int main()
     MYSQL* connect_fd = mysql_init(NULL);
 
     //2.建立链接
-    if(mysql_real_connect(connect_fd,"127.0.0.1","root","","blog_system",3306,NULL,0)==NULL)
+    if(mysql_real_connect(connect_fd,"127.0.0.1","root","1","blog_system",3306,NULL,0)==NULL)
     {
         printf("链接失败！%s\n",mysql_error(connect_fd));
         //mysql_close(connect_fd);
