@@ -1,11 +1,4 @@
 #pragma once
-#if defined(GNUC)
-#pragma GCC diagnostic push
-#pragma GCC diagnostic ignored “-Wdeprecated-declarations”
-#elif defined(_MSC_VER)
-#pragma warning(disable : 4996)
-#endif
-
 #include<cstdio>
 #include<cstdlib>
 #include<mysql/mysql.h>
@@ -198,7 +191,7 @@ namespace order_system
 
       }
 
-      bool Init(const Json::Value& order)
+      bool Insert(const Json::Value& order)
       {
         //1.拼装sql
         char sql[1024*10]={0};
