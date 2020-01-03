@@ -1,6 +1,12 @@
 #include "db.hpp"
 #include<iostream>
 #include<memory>
+#if defined(GNUC)
+#pragma GCC diagnostic push
+#pragma GCC diagnostic ignored “-Wdeprecated-declarations”
+#elif defined(_MSC_VER)
+#pragma warning(disable : 4996)
+#endif
 using namespace std;
 
 void TestDishTable()
