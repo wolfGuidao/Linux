@@ -66,14 +66,14 @@ namespace order_system
       bool SelectAll(Json::Value* dishes)
       {
         char sql[1024*10]={0};
-        sprintf(sql,"select dish_id,name,price from dish_table");
+        sprintf(sql,"select dish_id, name, price from dish_table");
         int ret = mysql_query(mysql_,sql);
         if(ret!=0)
         {
           printf("dishtable selectall is faild! %s",mysql_error(mysql_));
           return false;
         }
-        printf("dishtabel selectall is ok\n");
+        printf("dishtabel selectall is ok!\n");
 
         //构造结果
         MYSQL_RES* result = mysql_store_result(mysql_);

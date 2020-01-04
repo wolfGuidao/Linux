@@ -102,7 +102,6 @@ int main()
       }
       //2.构造正确的响应
         printf("dishtable selectall is ok!\n");
-        resp_json["ok"]=false;
         resp.status=200;
         resp.set_content(writer.write(resp_json),CONTENT_TYPE);
         return ;
@@ -308,6 +307,7 @@ int main()
 
   //查看订单
   server.Get("/order",[&order_table](const Request& req,Response& resp){
+      (void)req;
       printf("获取所有订单：\n");
       Json::Value req_json;
       Json::Value resp_json;
@@ -332,7 +332,6 @@ int main()
       
       //2.构造正确的响应
         printf("dishtable ieselectall is ok!\n");
-        resp_json["ok"]=true;
         resp.status=200;
         resp.set_content(writer.write(resp_json),CONTENT_TYPE);
         return ;
