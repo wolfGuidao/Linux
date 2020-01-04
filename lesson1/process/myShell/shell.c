@@ -1,4 +1,6 @@
 #include<stdio.h>
+#include <ctype.h>
+#include <sys/wait.h>
 #include<unistd.h>
 #include<string.h>
 #include<stdlib.h>

@@ -8,7 +8,7 @@ int main()
   MYSQL* mysql = mysql_init(NULL);
 
   //2.建立句柄和数据库之间的联系
-  if(mysql_real_connect(mysql,"127.0.0.1","root","1","order_system",3306,NULL,0)==NULL)
+  if(mysql_real_connect(mysql,"127.0.0.1","root","","order_system",3306,NULL,0)==NULL)
   {
     printf("connect failed!  %s\n",mysql_error(mysql));
     return 1;

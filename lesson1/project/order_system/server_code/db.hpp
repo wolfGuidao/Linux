@@ -12,7 +12,7 @@ namespace order_system
     MYSQL* mysql = mysql_init(NULL);
 
     //2.建立链接
-    if(mysql_real_connect(mysql,"127.0.0.1","root","1","order_system",3306,NULL,0)==NULL)
+    if(mysql_real_connect(mysql,"127.0.0.1","root","","order_system",3306,NULL,0)==NULL)
     {
       printf("mysql链接失败！%s\n",mysql_error(mysql));
       return NULL;
