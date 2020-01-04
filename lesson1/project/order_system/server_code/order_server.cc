@@ -1,9 +1,10 @@
-#include<jsoncpp/json/json.h>
-#include<signal.h>
-#include"db.hpp"
-#include<memory>
+#include <jsoncpp/json/json.h>
+#include "until.hpp"
+#include <signal.h>
+#include "db.hpp"
+#include <memory>
 #include "httplib.h"
-#include<iostream>
+#include <iostream>
 using namespace std;
 
 const char* CONTENT_TYPE="application/json";
@@ -396,6 +397,18 @@ int main()
         resp.set_content(writer.write(resp_json),CONTENT_TYPE);
         return ;
      
+      });
+
+  //对index.html进行修改，从query_string获取table_id填到页面的{{table_id}}中
+  server.Get("/table",[](const Request& req,Response& resp){
+      const std::string& table_id = req.get_param_value("table_id");
+      printf("table_id:%s\n",table_id.c_str());
+
+      std::string html;
+      FileUtil::ReadFile("./wwwroot/index.html",&html);
+      std::string html_out;
+      StringUtil::Replace(html,"{{table_id}}",table_id,&html_out);
+      resp.set_content(html_out,CONTENT_TYPE);
       });
 
   //让服务器读取./wwwroot目录中的文件
