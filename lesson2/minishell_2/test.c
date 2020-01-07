@@ -65,9 +65,62 @@ char** DealCommand(char* command)
   return argv; 
 }
 
+//进行重定向
+int redirect(char * g_command)
+{
+  char* ptr = g_command;
+  char* file = NULL;
+  int fd ;
+  //用来标记是清空重定向还是追加重定向
+  int redirect_type = -1;
+
+  while(*ptr !='\0')
+  {
+    //如果当前字符是 > ，把他置为'\0',并判断下一个位置是否为'\0'
+    if(*ptr == '>')
+    {
+      *ptr++ = '\0';
+      redirect_type++;
+      if(*ptr == '>')
+      {
+        *ptr++ = '\0';
+        redirect_type++;
+      }
+      //去掉多余的空格
+      while(isspace(*ptr))
+      {
+        ptr++;
+      }
+      //file就是空格后面的第一个字符串
+      file = ptr;
+
+      //继续找空格，在这两个空格之间就是文件的名称
+      while(!isspace(*ptr)&&*ptr != '\0')
+      {
+        ptr++;
+      }
+
+      *ptr='\0';
+      //如果redirect_type==0说明是清空重定向,如果==1说明是追加重新定向
+      if(redirect_type == 0)
+      {
+        fd = open(file,O_CREAT|O_TRUNC|O_WRONLY,0664);
+      }
+      else
+      {
+        fd = open(file,O_CREAT|O_APPEND|O_WRONLY,0664);
+      }
+      dup2(fd,1);
+    }
+    ptr++;
+  }
+  return 0;
+}
+
 //进行程序替换
 int exec()
 {
+  redirect(g_command);
   char** argv=DealCommand(g_command);
   pid_t pid =fork();
   if(pid<0)
@@ -94,6 +147,8 @@ int exec()
   }
   return 0;
 }
+
+
 
 int main()
 {
