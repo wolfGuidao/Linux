@@ -13,13 +13,12 @@ int main()
     perror("shmget errno");
     return -1;
   }
-  char *shm_start=shmat(shmid,NULL,0);
+  char *shm_start=(char*)shmat(shmid,NULL,0);
   if(shm_start==(void*)-1)
   {
     perror("shmat error");
     return -1;
   }
-  int i=0;
   while(1)
   {
     printf("%s",shm_start);
