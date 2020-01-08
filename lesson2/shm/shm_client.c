@@ -21,7 +21,8 @@ int main()
   while(1)
   {
     //read(0,addr,sizeof(addr));
-    scanf("please entry:%s",addr);
+    //scanf("please entry:%s",addr);
+    write(0,addr,10);
   }
 
   shmdt(addr);
