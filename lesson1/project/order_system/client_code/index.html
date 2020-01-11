@@ -352,7 +352,6 @@
             alert("当前未选择任何菜品，不能下单哟！")
             return;
           }
-              alert("下单成功！请稍等");
 
           var dish_ids = [];
           for(var index in this.dishes)
@@ -362,11 +361,11 @@
               dish_ids.push(this.dishes[index].dish_id);
             }
           }
-              alert("下单成功！请稍等");
           //构造请求
           var body={
             table_id:table_id,
             time:new Date().toLocaleDateString(),
+            //time:"2020",
             dish_ids:dish_ids,
           }
           $.ajax({
