@@ -14,7 +14,8 @@ void* r1(void* arg)
   while(1)
   {
     pthread_cond_wait(&cond,&mutex);
-    printf("活动！\n");
+    printf("6666！\n");
+    sleep(1);
   }
   return NULL;
 }
@@ -24,6 +25,8 @@ void* r2(void* arg)
   (void)arg;
   while(1)
   {
+    printf("9999\n");
+    sleep(3);
     pthread_cond_signal(&cond);
     sleep(1);
   }
