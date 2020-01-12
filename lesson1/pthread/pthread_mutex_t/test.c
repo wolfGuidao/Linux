@@ -22,6 +22,7 @@ void* ThreadEntry(void* arg)
         //对临界资源加锁操作
         pthread_mutex_lock(&mutex);
         ++g_count;
+        printf("g_count: %d\n",g_count);
         //解锁操作
         pthread_mutex_unlock(&mutex);
     }
@@ -41,7 +42,7 @@ int main()
     {
         pthread_join(tid[i],NULL);
     }
-    printf("g_count:%d\n",g_count);
+    //printf("g_count:%d\n",g_count);
     
     //释放锁
     pthread_mutex_destroy(&mutex);
