@@ -38,7 +38,7 @@ void* Writer(void* arg)
         g_count=count;
 
         pthread_rwlock_unlock(&lock);
-        sleep(1);
+        sleep(3);
     }
     return NULL;
 }

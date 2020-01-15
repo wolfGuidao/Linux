@@ -53,6 +53,7 @@ public:
     {
         queue_.Push(task);
     }
+
     static void* ThreadEntry(void* arg)
     {
         ThreadPool* pool=(ThreadPool*)arg;
