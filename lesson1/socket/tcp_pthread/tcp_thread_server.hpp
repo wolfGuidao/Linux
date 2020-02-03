@@ -41,7 +41,7 @@ class TcpThreadServer
                 TcpSocket client_sock;
                 string peer_ip;
                 uint16_t peer_port;
-                bool ret=listen_sock.Accept(&client_sock,&peer_ip,&peer_port);
+                bool ret = listen_sock.Accept(&client_sock,&peer_ip,&peer_port);
                 if(!ret)
                 {
                     continue;
@@ -69,11 +69,11 @@ class TcpThreadServer
             //1.创建线程
             pthread_t tid ;
 
-            ThreadEntryArg* arg=new ThreadEntryArg;
-            arg->client_sock=client_sock;
-            arg->ip=ip;
-            arg->port=port;
-            arg->handler=handler;
+            ThreadEntryArg* arg = new ThreadEntryArg;
+            arg->client_sock = client_sock;
+            arg->ip = ip;
+            arg->port = port;
+            arg->handler = handler;
             pthread_create(&tid,NULL,ThreadEntry,(void*)arg);
 
             //2.主线程让函数直接返回
@@ -81,11 +81,12 @@ class TcpThreadServer
             
             //3.新线程循环处理客户端的操作：
             
-
         }
+
         static void* ThreadEntry(void* arg)
         {
             ThreadEntryArg* argument = (ThreadEntryArg*)arg;
+
             TcpSocket client_sock = argument->client_sock;
             string& ip=argument->ip;
             uint16_t port=argument->port;
@@ -95,11 +96,13 @@ class TcpThreadServer
             {
             //   a)读取客户端请求
                 string req;
+
                 int ret=client_sock.Recv(&req);
                 if(ret<0)
                 {
                     continue;
                 }
+
                 if(ret==0)
                 {
                     client_sock.Close();
