@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include "tcp_socket.hpp"
 
-typedef std::function<void (const std::string&, std::string*)> Handler;
+typedef std::function<void (const std::string& req, std::string* resp)> Handler;
 
 struct ThreadArg 
 {
