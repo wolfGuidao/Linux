@@ -107,7 +107,7 @@ class TcpSocket
       return true;
     }
 
-    bool Recv(std::string* buf)
+    int Recv(std::string* buf)
     {
       buf->clear();
       char temp[1024 * 10]= {0};
@@ -116,15 +116,15 @@ class TcpSocket
       if(read_size < 0)
       {
         perror("recv is error");
-        return false;
+        return -1;
       }
       if(read_size == 0)
       {
-        return false;
+        return 0;
       }
 
       buf->assign(temp,read_size);
-      return true;
+      return 1;
     }
     
     bool Send(const std::string& buf)
@@ -151,6 +151,12 @@ class TcpSocket
         perror("connect is error");
         return false;
       }
+      return true;
+    }
+
+    int GetFd()
+    {
+      return fd_;
     }
   private:
     int fd_;
