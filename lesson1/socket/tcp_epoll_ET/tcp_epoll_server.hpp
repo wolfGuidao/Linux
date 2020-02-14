@@ -142,8 +142,11 @@ class TcpEpollServer
                             continue;
                         }
                         printf("[client %d]%s\n",sock.GetFd(),req.c_str());
+
                         string resp;
+
                         handler(req,&resp);
+
                         sock.SendNoBlock(resp);
                     }
                 }

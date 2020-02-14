@@ -40,6 +40,7 @@ int main(int argc, char* argv[])
     perror("bind");
     return 1;
   }
+
   ret = listen(fd, 10);
   if (ret < 0)
   {
@@ -52,12 +53,12 @@ int main(int argc, char* argv[])
   {
     struct sockaddr_in client_addr;
     socklen_t len;
+
     int client_fd = accept(fd, (struct sockaddr*)&client_addr, &len);
     if (client_fd < 0)
     {
       perror("accept");
       continue;
-
     }
 
     char input_buf[1024 * 10] = {0}; // 用一个足够大的缓冲区直接把数据读完.
@@ -76,7 +77,6 @@ int main(int argc, char* argv[])
     const char* hello = "<h1>hello world</h1>";
     sprintf(buf, "HTTP/1.0 200 OK\nContent-Length:%lu\n\n%s", strlen(hello), hello);
     write(client_fd, buf, strlen(buf));
-
   }
   return 0;
 
