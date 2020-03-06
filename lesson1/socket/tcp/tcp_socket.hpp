@@ -50,7 +50,7 @@ public:
     //给服务器使用的
     bool Listen()
     {
-        int ret=listen(fd_,30);
+        int ret=listen(fd_,10);
         if(ret<0)
         {
             perror("listen");
@@ -59,7 +59,7 @@ public:
         return true;
     }
 
-    //把连接队列中的链接取出一个到户代码中,如果队列中没有连接，默认就会阻塞
+    //把连接队列中的链接取出一个到用户代码中,如果队列中没有连接，默认就会阻塞
     //int accept(int sockfd,struct sockaddr* addr,socklen_t *addrle),addrle:是一个输入输出型参数
     //addr:对端IP地址和端口号;addrle:是一个输入输出型参数;返回值也是一个socket
     //给服务器使用的
@@ -75,7 +75,7 @@ public:
             perror("client_sock");
             return false;
         }
-        //输出型参数peer，ip,port,方便客户端使用，把对端的fd,IP,port情况返回
+        //把对端的IP情况返回
         peer->fd_=client_sock;
         if(ip!=NULL)
         {
@@ -90,7 +90,7 @@ public:
 
 
     //给服务器和客户端使用的
-    int Recv(string* msg)
+    int Recv(string* msg)const
     {
         msg->clear();
         char buf[1024*10]={0};
