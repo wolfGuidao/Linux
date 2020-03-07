@@ -1,0 +1,1 @@
+./redirect.o: redirect.c
