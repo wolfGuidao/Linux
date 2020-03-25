@@ -43,8 +43,6 @@ class Epoll
             printf("[Epoll::del]%d\n",sock.GetFd());
 
             epoll_ctl(epoll_fd_,EPOLL_CTL_DEL,sock.GetFd(),NULL);
-
-
         }
 
         //输出型参数output，告诉我们有多少个文件描述符处于就绪状态

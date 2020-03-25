@@ -17,12 +17,22 @@ class Poll
        ,nfds_(0)
        ,timeout_(1000)
   {
+    //为fds开空间
     fds_=new pollfd[fds_size_];
 
   }
 
     bool Add(TcpSocket& sock)
     {
+      
+      for(size_t i = 0;i < nfds_;++i)
+      {
+        //不在fds_内才添加
+        if(fds_[i].fd == sock.GetFd())
+        {
+          return false;
+        }
+      }        
       if(nfds_== fds_size_)
       {//需要扩容
         pollfd* new_fds = new pollfd[2 * fds_size_];
@@ -45,7 +55,8 @@ class Poll
       int del_fd = sock.GetFd();
 
       for(size_t i = 0;i < nfds_;++i)
-      {//在fds_内才移除
+      {
+        //在fds_内才移除
         if(fds_[i].fd == del_fd)
         {
           fds_[i] = fds_[--nfds_];
@@ -98,7 +109,7 @@ class Poll
     }
 
   private:
-    pollfd* fds_;
+    struct pollfd* fds_;
     nfds_t fds_size_;
     nfds_t nfds_;
     int timeout_;
@@ -144,9 +155,9 @@ class TcpPollServer
 
         for(size_t i = 0;i < list.size();++i)
         {
+            TcpSocket NewSock;
           if(list[i].GetFd() == _sock.GetFd())
           {
-            TcpSocket NewSock;
             if(!_sock.Accept(&NewSock,NULL,NULL))
               continue;
 

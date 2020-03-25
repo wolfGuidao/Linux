@@ -5,6 +5,7 @@
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>
+#include "httplib.h"
 
 void Usage() 
 {
@@ -75,9 +76,46 @@ int main(int argc, char* argv[])
     char buf[1024] = {0};
 
     const char* hello = "<h1>hello world</h1>";
-    sprintf(buf, "HTTP/1.0 200 OK\nContent-Length:%lu\n\n%s", strlen(hello), hello);
+    sprintf(buf,"Http/1.0 200 ok\nContent-Length:%lu\n\n%s", strlen(hello), hello);
     write(client_fd, buf, strlen(buf));
   }
   return 0;
 
 }
+
+#if 0
+
+int main()
+{
+  using namespace httplib;
+  Server ser;
+  ser.Get("/",[](const Request& req,Response& res)
+      {
+      (void)req;
+        res.set_content("<html>hello</html>","123");
+      });
+
+  ser.set_base_dir("./wwwroot");
+
+  ser.listen("0.0.0.0",9090);
+
+  return 0;
+}
+#endif
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
