@@ -1,0 +1,586 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+AddAlternateTemplateRootDirectory	ctemplate/template.h	/^  static bool AddAlternateTemplateRootDirectory(const std::string& dir) {$/;"	f	class:ctemplate::Template
+BufferStream	httplib.h	/^    BufferStream() {}$/;"	f	class:httplib::BufferStream
+BufferStream	httplib.h	/^class BufferStream : public Stream {$/;"	c	namespace:httplib
+CPPHTTPLIB_HTTPLIB_H	httplib.h	9;"	d
+CPPHTTPLIB_KEEPALIVE_TIMEOUT_SECOND	httplib.h	81;"	d
+CPPHTTPLIB_KEEPALIVE_TIMEOUT_USECOND	httplib.h	82;"	d
+CTEMPLATE_TEMPLATE_H_	ctemplate/template.h	37;"	d
+CacheGlobalId	ctemplate/template_string.h	/^  inline void CacheGlobalId() { \/\/ used by HashedTemplateString$/;"	f	class:ctemplate::TemplateString
+CleanseAttribute	ctemplate/template_modifiers.h	/^class  CleanseAttribute : public TemplateModifier {$/;"	c	namespace:ctemplate
+CleanseCss	ctemplate/template_modifiers.h	/^class  CleanseCss : public TemplateModifier {$/;"	c	namespace:ctemplate
+ClearCache	ctemplate/template.h	/^  static void ClearCache() {$/;"	f	class:ctemplate::Template
+Client	httplib.h	/^class Client {$/;"	c	namespace:httplib
+Client	httplib.h	/^inline Client::Client($/;"	f	class:httplib::Client
+DEBUG	oj_log.hpp	/^    DEBUG$/;"	e	enum:LogLevel
+DO_NOT_STRIP	ctemplate/template_enums.h	/^enum Strip { DO_NOT_STRIP, STRIP_BLANK_LINES, STRIP_WHITESPACE,$/;"	e	enum:ctemplate::Strip
+DataEq	ctemplate/per_expand_data.h	/^  struct DataEq {$/;"	s	class:ctemplate::PerExpandData
+DataMap	ctemplate/per_expand_data.h	/^    DataMap;$/;"	t	class:ctemplate::PerExpandData
+DataMap	ctemplate/per_expand_data.h	/^  typedef std::tr1::unordered_map<const char*, const void*, StringHash> DataMap;$/;"	t	class:ctemplate::PerExpandData
+Delete	httplib.h	/^inline Server& Server::Delete(const char* pattern, Handler handler)$/;"	f	class:httplib::Server
+Delete	httplib.h	/^inline std::shared_ptr<Response> Client::Delete(const char* path)$/;"	f	class:httplib::Client
+Delete	httplib.h	/^inline std::shared_ptr<Response> Client::Delete(const char* path, const Headers& headers)$/;"	f	class:httplib::Client
+DescPath	oj_model.hpp	/^        std::string DescPath(const std::string& ques_path)$/;"	f	class:OjModel
+DictVector	ctemplate/template_dictionary.h	/^      DictVector;$/;"	t	class:ctemplate::TemplateDictionary
+ERROR	oj_log.hpp	/^    ERROR,$/;"	e	enum:LogLevel
+Emit	ctemplate/template_emitter.h	/^  virtual void Emit(char c) { *outbuf_ += c; }$/;"	f	class:ctemplate::StringEmitter
+Emit	ctemplate/template_emitter.h	/^  virtual void Emit(const char* s) { *outbuf_ += s; }$/;"	f	class:ctemplate::StringEmitter
+Emit	ctemplate/template_emitter.h	/^  virtual void Emit(const char* s, size_t slen) { outbuf_->append(s, slen); }$/;"	f	class:ctemplate::StringEmitter
+Emit	ctemplate/template_emitter.h	/^  virtual void Emit(const std::string& s) { *outbuf_ += s; }$/;"	f	class:ctemplate::StringEmitter
+Expand	ctemplate/template.h	/^  bool Expand(ExpandEmitter* output,$/;"	f	class:ctemplate::Template
+Expand	ctemplate/template.h	/^  bool Expand(std::string* output_buffer,$/;"	f	class:ctemplate::Template
+ExpandAllQuestionshtml	oj_view.hpp	/^        static void ExpandAllQuestionshtml(std::string* html, std::vector<Question>& ques)$/;"	f	class:OjView
+ExpandEmitter	ctemplate/template_emitter.h	/^  ExpandEmitter() {}$/;"	f	class:ctemplate::ExpandEmitter
+ExpandEmitter	ctemplate/template_emitter.h	/^class  ExpandEmitter {$/;"	c	namespace:ctemplate
+ExpandNoLoad	ctemplate/template_cache.h	/^  bool ExpandNoLoad(const TemplateString& filename, Strip strip,$/;"	f	class:ctemplate::TemplateCache
+ExpandOneQuestion	oj_view.hpp	/^        static void ExpandOneQuestion(const Question& ques, std::string& desc, $/;"	f	class:OjView
+ExpandTemplate	ctemplate/template.h	/^inline bool ExpandTemplate(const TemplateString& filename, Strip strip,$/;"	f	namespace:ctemplate
+ExpandWithData	ctemplate/template.h	/^  bool ExpandWithData(ExpandEmitter* output,$/;"	f	class:ctemplate::Template
+ExpandWithData	ctemplate/template.h	/^  bool ExpandWithData(std::string* output_buffer,$/;"	f	class:ctemplate::Template
+ExpandWithData	ctemplate/template.h	/^inline bool ExpandWithData(const TemplateString& filename, Strip strip,$/;"	f	namespace:ctemplate
+ExpandWithData	ctemplate/template_cache.h	/^  bool ExpandWithData(const TemplateString& filename, Strip strip,$/;"	f	class:ctemplate::TemplateCache
+FATAL	oj_log.hpp	/^    FATAL,$/;"	e	enum:LogLevel
+FileOper	tools.hpp	/^class FileOper$/;"	c
+FindTemplateFilename	ctemplate/template.h	/^  static std::string FindTemplateFilename($/;"	f	class:ctemplate::Template
+GETTING_NAME	ctemplate/template.h	/^    enum { PS_UNUSED, GETTING_TEXT, GETTING_NAME } phase;$/;"	e	enum:ctemplate::Template::ParseState::__anon1
+GETTING_TEXT	ctemplate/template.h	/^    enum { PS_UNUSED, GETTING_TEXT, GETTING_NAME } phase;$/;"	e	enum:ctemplate::Template::ParseState::__anon1
+Get	httplib.h	/^inline Server& Server::Get(const char* pattern, Handler handler)$/;"	f	class:httplib::Server
+Get	httplib.h	/^inline std::shared_ptr<Response> Client::Get(const char* path, Progress progress)$/;"	f	class:httplib::Client
+Get	httplib.h	/^inline std::shared_ptr<Response> Client::Get(const char* path, const Headers& headers, Progress progress)$/;"	f	class:httplib::Client
+GetAllQuestions	oj_model.hpp	/^        bool GetAllQuestions(std::vector<Question>* ques)$/;"	f	class:OjModel
+GetOneQuestion	oj_model.hpp	/^        bool GetOneQuestion(const std::string& id, std::string* desc, std::string* header, Question* ques)$/;"	f	class:OjModel
+GetTimeStamp	oj_log.hpp	/^        static int64_t GetTimeStamp()$/;"	f	class:LogTime
+GetTimeStamp	oj_log.hpp	/^        static void GetTimeStamp(std::string* TimeStamp)$/;"	f	class:LogTime
+GlobalDict	ctemplate/template_dictionary.h	/^      GlobalDict;$/;"	t	class:ctemplate::TemplateDictionary
+Handler	httplib.h	/^    typedef std::function<void (const Request&, Response&)> Handler;$/;"	t	class:httplib::Server
+Handlers	httplib.h	/^    typedef std::vector<std::pair<std::regex, Handler>> Handlers;$/;"	t	class:httplib::Server
+Hasher	ctemplate/template_string.h	/^  struct Hasher {$/;"	s	struct:ctemplate::StaticTemplateString
+Head	httplib.h	/^inline std::shared_ptr<Response> Client::Head(const char* path)$/;"	f	class:httplib::Client
+Head	httplib.h	/^inline std::shared_ptr<Response> Client::Head(const char* path, const Headers& headers)$/;"	f	class:httplib::Client
+HeaderPath	oj_model.hpp	/^        std::string HeaderPath(const std::string& ques_path)$/;"	f	class:OjModel
+Headers	httplib.h	/^typedef std::multimap<std::string, std::string, detail::ci>  Headers;$/;"	t	namespace:httplib
+HtmlEscape	ctemplate/template_modifiers.h	/^class  HtmlEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+HttpVersion	httplib.h	/^enum class HttpVersion { v1_0 = 0, v1_1 };$/;"	c	namespace:httplib
+IMMEDIATE_RELOAD	ctemplate/template_cache.h	/^  enum ReloadType { LAZY_RELOAD, IMMEDIATE_RELOAD };$/;"	e	enum:ctemplate::TemplateCache::ReloadType
+INFO	oj_log.hpp	/^    INFO = 0,$/;"	e	enum:LogLevel
+INVALID_SOCKET	httplib.h	55;"	d
+IdToString	ctemplate/template_dictionary.h	/^  static TemplateString IdToString(TemplateId id) {   \/\/ for DictionaryPrinter$/;"	f	class:ctemplate::TemplateDictionary
+InTextSegment	ctemplate/template_string.h	/^  static bool InTextSegment(const char* s) {$/;"	f	class:ctemplate::TemplateString
+IncludeDict	ctemplate/template_dictionary.h	/^      IncludeDict;$/;"	t	class:ctemplate::TemplateDictionary
+InvalidTemplateString	ctemplate/template_dictionary.h	/^  static bool InvalidTemplateString(const TemplateString& ts) {$/;"	f	class:ctemplate::TemplateDictionary
+IsTemplateIdInitialized	ctemplate/template_string.h	/^inline bool IsTemplateIdInitialized(TemplateId id) {$/;"	f	namespace:ctemplate
+IsUnhiddenSection	ctemplate/template_dictionary.h	/^  virtual bool IsUnhiddenSection(const TemplateString& name) const {$/;"	f	class:ctemplate::TemplateDictionary
+Iterator	ctemplate/template_dictionary.h	/^    Iterator(T begin, T end) : begin_(begin), end_(end) { }$/;"	f	class:ctemplate::TemplateDictionary::Iterator
+Iterator	ctemplate/template_dictionary.h	/^  class Iterator : public TemplateDictionaryInterface::Iterator {$/;"	c	class:ctemplate::TemplateDictionary
+Iterator	ctemplate/template_dictionary_interface.h	/^    Iterator() { }$/;"	f	class:ctemplate::TemplateDictionaryInterface::Iterator
+Iterator	ctemplate/template_dictionary_interface.h	/^  class Iterator {$/;"	c	class:ctemplate::TemplateDictionaryInterface
+JavascriptEscape	ctemplate/template_modifiers.h	/^class  JavascriptEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+JavascriptNumber	ctemplate/template_modifiers.h	/^class  JavascriptNumber : public TemplateModifier {$/;"	c	namespace:ctemplate
+JsonEscape	ctemplate/template_modifiers.h	/^class  JsonEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+LAZY_RELOAD	ctemplate/template_cache.h	/^  enum ReloadType { LAZY_RELOAD, IMMEDIATE_RELOAD };$/;"	e	enum:ctemplate::TemplateCache::ReloadType
+LOG	oj_log.hpp	66;"	d
+Level	oj_log.hpp	/^const char* Level[] = $/;"	v
+LoadQuestions	oj_model.hpp	/^        bool LoadQuestions(const std::string& configfile_path)$/;"	f	class:OjModel
+LoadTemplate	ctemplate/template.h	/^inline bool LoadTemplate(const TemplateString& filename, Strip strip) {$/;"	f	namespace:ctemplate
+Log	oj_log.hpp	/^inline std::ostream& Log(LogLevel lev, const char* file, int line, const std::string& logmsg)$/;"	f
+LogLevel	oj_log.hpp	/^enum LogLevel$/;"	g
+LogTime	oj_log.hpp	/^class LogTime$/;"	c
+Logger	httplib.h	/^    typedef std::function<void (const Request&, const Response&)> Logger;$/;"	t	class:httplib::Server
+LookupForModifiersAsString	ctemplate/per_expand_data.h	/^  const char* LookupForModifiersAsString(const char* key) const {$/;"	f	class:ctemplate::PerExpandData
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::CleanseAttribute
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::CleanseCss
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::HtmlEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::JavascriptEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::JavascriptNumber
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::JsonEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::NullModifier
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::PreEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::PrefixLine
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::SnippetEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::UrlQueryEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::ValidateUrl
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	/^  MODIFY_SIGNATURE_;$/;"	m	class:ctemplate::XmlEscape
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	301;"	d
+MODIFY_SIGNATURE_	ctemplate/template_modifiers.h	77;"	d
+MakeIterator	ctemplate/template_dictionary.h	/^  static Iterator<typename T::const_iterator>* MakeIterator(const T& dv) {$/;"	f	class:ctemplate::TemplateDictionary
+MarkerDelimiters	ctemplate/template.h	/^    MarkerDelimiters() {$/;"	f	struct:ctemplate::Template::MarkerDelimiters
+MarkerDelimiters	ctemplate/template.h	/^  struct  MarkerDelimiters {$/;"	s	class:ctemplate::Template
+Match	httplib.h	/^typedef std::smatch                                            Match;$/;"	t	namespace:httplib
+Memdup	ctemplate/template_dictionary.h	/^  TemplateString Memdup(const TemplateString& s) {$/;"	f	class:ctemplate::TemplateDictionary
+MightModify	ctemplate/template_modifiers.h	/^  virtual bool MightModify(const PerExpandData* \/*per_expand_data*\/,$/;"	f	class:ctemplate::TemplateModifier
+MissingListType	ctemplate/template_namelist.h	/^  typedef std::vector<std::string> MissingListType;$/;"	t	class:ctemplate::TemplateNamelist
+MultipartFile	httplib.h	/^struct MultipartFile {$/;"	s	namespace:httplib
+MultipartFiles	httplib.h	/^typedef std::multimap<std::string, MultipartFile> MultipartFiles;$/;"	t	namespace:httplib
+MyLinkedList	oj_data/1/header.cpp	/^        MyLinkedList() {$/;"	f	class:MyLinkedList
+MyLinkedList	oj_data/1/header.cpp	/^class MyLinkedList {$/;"	c	file:
+NOMINMAX	httplib.h	32;"	d
+NO_ARENA	ctemplate/template_dictionary.h	/^  static UnsafeArena* const NO_ARENA;$/;"	m	class:ctemplate::TemplateDictionary
+NUM_STRIPS	ctemplate/template_enums.h	/^             NUM_STRIPS };   \/\/ sentinel value$/;"	e	enum:ctemplate::Strip
+NameListType	ctemplate/template_namelist.h	/^  typedef std::tr1::unordered_set<std::string, StringHash> NameListType;$/;"	t	class:ctemplate::TemplateNamelist
+NullModifier	ctemplate/template_modifiers.h	/^class  NullModifier : public TemplateModifier {$/;"	c	namespace:ctemplate
+OjModel	oj_model.hpp	/^        OjModel()$/;"	f	class:OjModel
+OjModel	oj_model.hpp	/^class OjModel$/;"	c
+OjView	oj_view.hpp	/^class OjView$/;"	c
+Options	httplib.h	/^inline Server& Server::Options(const char* pattern, Handler handler)$/;"	f	class:httplib::Server
+Options	httplib.h	/^inline std::shared_ptr<Response> Client::Options(const char* path)$/;"	f	class:httplib::Client
+Options	httplib.h	/^inline std::shared_ptr<Response> Client::Options(const char* path, const Headers& headers)$/;"	f	class:httplib::Client
+PS_UNUSED	ctemplate/template.h	/^    enum { PS_UNUSED, GETTING_TEXT, GETTING_NAME } phase;$/;"	e	enum:ctemplate::Template::ParseState::__anon1
+Params	httplib.h	/^typedef std::multimap<std::string, std::string>                Params;$/;"	t	namespace:httplib
+ParseState	ctemplate/template.h	/^    ParseState()$/;"	f	struct:ctemplate::Template::ParseState
+ParseState	ctemplate/template.h	/^  struct  ParseState {$/;"	s	class:ctemplate::Template
+PerExpandData	ctemplate/per_expand_data.h	/^  PerExpandData()$/;"	f	class:ctemplate::PerExpandData
+PerExpandData	ctemplate/per_expand_data.h	/^class  PerExpandData {$/;"	c	namespace:ctemplate
+Post	httplib.h	/^inline Server& Server::Post(const char* pattern, Handler handler)$/;"	f	class:httplib::Server
+Post	httplib.h	/^inline std::shared_ptr<Response> Client::Post($/;"	f	class:httplib::Client
+Post	httplib.h	/^inline std::shared_ptr<Response> Client::Post(const char* path, const Headers& headers, const Params& params)$/;"	f	class:httplib::Client
+Post	httplib.h	/^inline std::shared_ptr<Response> Client::Post(const char* path, const Params& params)$/;"	f	class:httplib::Client
+PreEscape	ctemplate/template_modifiers.h	/^class  PreEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+PrefixLine	ctemplate/template_modifiers.h	/^class  PrefixLine : public TemplateModifier {$/;"	c	namespace:ctemplate
+PrintableTemplateString	ctemplate/template_dictionary.h	/^  static std::string PrintableTemplateString($/;"	f	class:ctemplate::TemplateDictionary
+Progress	httplib.h	/^typedef std::function<bool (uint64_t current, uint64_t total)> Progress;$/;"	t	namespace:httplib
+Put	httplib.h	/^inline Server& Server::Put(const char* pattern, Handler handler)$/;"	f	class:httplib::Server
+Put	httplib.h	/^inline std::shared_ptr<Response> Client::Put($/;"	f	class:httplib::Client
+QUES	oj_model.hpp	/^}QUES;$/;"	t	typeref:struct:Question
+Question	oj_model.hpp	/^typedef struct Question$/;"	s
+ReadDataFromFile	tools.hpp	/^        static int ReadDataFromFile(const std::string& filename, std::string* content)$/;"	f	class:FileOper
+RegisterTemplateFilename	ctemplate/template_namelist.h	66;"	d
+ReloadAllIfChanged	ctemplate/template.h	/^  static void ReloadAllIfChanged() {$/;"	f	class:ctemplate::Template
+ReloadType	ctemplate/template_cache.h	/^  enum ReloadType { LAZY_RELOAD, IMMEDIATE_RELOAD };$/;"	g	class:ctemplate::TemplateCache
+RemoveStringFromTemplateCache	ctemplate/template.h	/^  static void RemoveStringFromTemplateCache(const std::string& key) {$/;"	f	class:ctemplate::Template
+Request	httplib.h	/^struct Request {$/;"	s	namespace:httplib
+Response	httplib.h	/^    Response() : status(-1) {}$/;"	f	struct:httplib::Response
+Response	httplib.h	/^struct Response {$/;"	s	namespace:httplib
+SO_OPENTYPE	httplib.h	563;"	d
+SO_SYNCHRONOUS_NONALERT	httplib.h	562;"	d
+SSLClient	httplib.h	/^class SSLClient : public Client {$/;"	c	namespace:httplib
+SSLClient	httplib.h	/^inline SSLClient::SSLClient(const char* host, int port, time_t timeout_sec)$/;"	f	class:httplib::SSLClient
+SSLInit	httplib.h	/^    SSLInit() {$/;"	f	class:httplib::detail::SSLInit
+SSLInit	httplib.h	/^class SSLInit {$/;"	c	namespace:httplib::detail
+SSLServer	httplib.h	/^class SSLServer : public Server {$/;"	c	namespace:httplib
+SSLServer	httplib.h	/^inline SSLServer::SSLServer(const char* cert_path, const char* private_key_path)$/;"	f	class:httplib::SSLServer
+SSLSocketStream	httplib.h	/^class SSLSocketStream : public Stream {$/;"	c	namespace:httplib
+SSLSocketStream	httplib.h	/^inline SSLSocketStream::SSLSocketStream(socket_t sock, SSL* ssl)$/;"	f	class:httplib::SSLSocketStream
+STRIP_BLANK_LINES	ctemplate/template_enums.h	/^enum Strip { DO_NOT_STRIP, STRIP_BLANK_LINES, STRIP_WHITESPACE,$/;"	e	enum:ctemplate::Strip
+STRIP_WHITESPACE	ctemplate/template_enums.h	/^enum Strip { DO_NOT_STRIP, STRIP_BLANK_LINES, STRIP_WHITESPACE,$/;"	e	enum:ctemplate::Strip
+STS_INIT	ctemplate/template_string.h	81;"	d
+STS_INIT_WITH_HASH	ctemplate/template_string.h	339;"	d
+S_ISDIR	httplib.h	29;"	d
+S_ISREG	httplib.h	25;"	d
+SectionDict	ctemplate/template_dictionary.h	/^      SectionDict;$/;"	t	class:ctemplate::TemplateDictionary
+Server	httplib.h	/^class Server {$/;"	c	namespace:httplib
+Server	httplib.h	/^inline Server::Server()$/;"	f	class:httplib::Server
+SetAnnotateOutput	ctemplate/per_expand_data.h	/^  void SetAnnotateOutput(const char* template_path_start) {$/;"	f	class:ctemplate::PerExpandData
+SetAnnotator	ctemplate/per_expand_data.h	/^  void SetAnnotator(TemplateAnnotator* annotator) {$/;"	f	class:ctemplate::PerExpandData
+SetProxy	ctemplate/template_dictionary.h	/^    SetProxy(TemplateDictionary& dict, const TemplateString& variable) :$/;"	f	class:ctemplate::TemplateDictionary::SetProxy
+SetProxy	ctemplate/template_dictionary.h	/^  class SetProxy {$/;"	c	class:ctemplate::TemplateDictionary
+SetTemplateExpansionModifier	ctemplate/per_expand_data.h	/^  void SetTemplateExpansionModifier(const TemplateModifier* modifier) {$/;"	f	class:ctemplate::PerExpandData
+SetTemplateRootDirectory	ctemplate/template.h	/^  static bool SetTemplateRootDirectory(const std::string& dir) {$/;"	f	class:ctemplate::Template
+SnippetEscape	ctemplate/template_modifiers.h	/^class  SnippetEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+SocketStream	httplib.h	/^class SocketStream : public Stream {$/;"	c	namespace:httplib
+SocketStream	httplib.h	/^inline SocketStream::SocketStream(socket_t sock): sock_(sock)$/;"	f	class:httplib::SocketStream
+Split	tools.hpp	/^        static void Split(const std::string& input, const std::string& split_char, std::vector<std::string>* output)$/;"	f	class:StringTools
+StaticTemplateString	ctemplate/template_string.h	/^struct  StaticTemplateString {$/;"	s	namespace:ctemplate
+StaticTemplateStringInitializer	ctemplate/template_string.h	/^class  StaticTemplateStringInitializer {$/;"	c	namespace:ctemplate
+Stream	httplib.h	/^class Stream {$/;"	c	namespace:httplib
+StringEmitter	ctemplate/template_emitter.h	/^  StringEmitter(std::string* outbuf) : outbuf_(outbuf) {}$/;"	f	class:ctemplate::StringEmitter
+StringEmitter	ctemplate/template_emitter.h	/^class  StringEmitter : public ExpandEmitter {$/;"	c	namespace:ctemplate
+StringHash	ctemplate/template_string.h	/^struct  StringHash {$/;"	s	namespace:ctemplate
+StringToTemplate	ctemplate/template.h	/^  static Template* StringToTemplate(const char* content, size_t content_len,$/;"	f	class:ctemplate::Template
+StringToTemplateCache	ctemplate/template.h	/^  static bool StringToTemplateCache(const TemplateString& key,$/;"	f	class:ctemplate::Template
+StringToTemplateCache	ctemplate/template.h	/^inline bool StringToTemplateCache(const TemplateString& key,$/;"	f	namespace:ctemplate
+StringToTemplateCache	ctemplate/template_cache.h	/^  bool StringToTemplateCache(const TemplateString& key,$/;"	f	class:ctemplate::TemplateCache
+StringTools	tools.hpp	/^class StringTools$/;"	c
+Strip	ctemplate/template_enums.h	/^enum Strip { DO_NOT_STRIP, STRIP_BLANK_LINES, STRIP_WHITESPACE,$/;"	g	namespace:ctemplate
+SyntaxListType	ctemplate/template_namelist.h	/^  typedef std::vector<std::string> SyntaxListType;$/;"	t	class:ctemplate::TemplateNamelist
+TC_CSS	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	e	enum:ctemplate::TemplateContext
+TC_HTML	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	e	enum:ctemplate::TemplateContext
+TC_JS	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	e	enum:ctemplate::TemplateContext
+TC_JSON	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	e	enum:ctemplate::TemplateContext
+TC_MANUAL	ctemplate/template.h	/^                       TC_XML, TC_MANUAL };$/;"	e	enum:ctemplate::TemplateContext
+TC_UNUSED	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	e	enum:ctemplate::TemplateContext
+TC_XML	ctemplate/template.h	/^                       TC_XML, TC_MANUAL };$/;"	e	enum:ctemplate::TemplateContext
+TEMPLATE_PER_EXPAND_DATA_H_	ctemplate/per_expand_data.h	43;"	d
+TEMPLATE_STR_REF_H_	ctemplate/str_ref.h	34;"	d
+TEMPLATE_TEMPLATE_ANNOTATOR_H_	ctemplate/template_annotator.h	53;"	d
+TEMPLATE_TEMPLATE_CACHE_H_	ctemplate/template_cache.h	35;"	d
+TEMPLATE_TEMPLATE_DICTIONARY_H_	ctemplate/template_dictionary.h	47;"	d
+TEMPLATE_TEMPLATE_DICTIONARY_INTERFACE_H_	ctemplate/template_dictionary_interface.h	43;"	d
+TEMPLATE_TEMPLATE_EMITTER_H_	ctemplate/template_emitter.h	38;"	d
+TEMPLATE_TEMPLATE_ENUMS_H_	ctemplate/template_enums.h	36;"	d
+TEMPLATE_TEMPLATE_MODIFIERS_H_	ctemplate/template_modifiers.h	64;"	d
+TEMPLATE_TEMPLATE_NAMELIST_H_	ctemplate/template_namelist.h	40;"	d
+TEMPLATE_TEMPLATE_PATHOPS_H_	ctemplate/template_pathops.h	34;"	d
+TEMPLATE_TEMPLATE_STRING_H_	ctemplate/template_string.h	34;"	d
+TS_EMPTY	ctemplate/template.h	/^enum TemplateState { TS_UNUSED, TS_EMPTY, TS_ERROR, TS_READY };$/;"	e	enum:ctemplate::TemplateState
+TS_ERROR	ctemplate/template.h	/^enum TemplateState { TS_UNUSED, TS_EMPTY, TS_ERROR, TS_READY };$/;"	e	enum:ctemplate::TemplateState
+TS_READY	ctemplate/template.h	/^enum TemplateState { TS_UNUSED, TS_EMPTY, TS_ERROR, TS_READY };$/;"	e	enum:ctemplate::TemplateState
+TS_UNUSED	ctemplate/template.h	/^enum TemplateState { TS_UNUSED, TS_EMPTY, TS_ERROR, TS_READY };$/;"	e	enum:ctemplate::TemplateState
+Template	ctemplate/template.h	/^class  Template {$/;"	c	namespace:ctemplate
+TemplateAnnotator	ctemplate/template_annotator.h	/^  TemplateAnnotator() { }$/;"	f	class:ctemplate::TemplateAnnotator
+TemplateAnnotator	ctemplate/template_annotator.h	/^class  TemplateAnnotator {$/;"	c	namespace:ctemplate
+TemplateCache	ctemplate/template_cache.h	/^class  TemplateCache {$/;"	c	namespace:ctemplate
+TemplateCacheKey	ctemplate/template_cache.h	/^  typedef std::pair<TemplateId, int> TemplateCacheKey;$/;"	t	class:ctemplate::TemplateCache
+TemplateCallMap	ctemplate/template_cache.h	/^  typedef std::tr1::unordered_map<RefcountedTemplate*, int, RefTplPtrHash> TemplateCallMap;$/;"	t	class:ctemplate::TemplateCache
+TemplateContext	ctemplate/template.h	/^enum TemplateContext { TC_UNUSED, TC_HTML, TC_JS, TC_CSS, TC_JSON,$/;"	g	namespace:ctemplate
+TemplateDictionary	ctemplate/template_dictionary.h	/^class  TemplateDictionary : public TemplateDictionaryInterface {$/;"	c	namespace:ctemplate
+TemplateDictionaryInterface	ctemplate/template_dictionary_interface.h	/^  TemplateDictionaryInterface() {}$/;"	f	class:ctemplate::TemplateDictionaryInterface
+TemplateDictionaryInterface	ctemplate/template_dictionary_interface.h	/^class  TemplateDictionaryInterface {$/;"	c	namespace:ctemplate
+TemplateId	ctemplate/template_string.h	/^typedef u_int64_t TemplateId;$/;"	t	namespace:ctemplate
+TemplateIdHasher	ctemplate/template_string.h	/^struct TemplateIdHasher {$/;"	s	namespace:ctemplate
+TemplateMap	ctemplate/template_cache.h	/^    TemplateMap;$/;"	t	class:ctemplate::TemplateCache
+TemplateModifier	ctemplate/template_modifiers.h	/^class  TemplateModifier {$/;"	c	namespace:ctemplate
+TemplateNamelist	ctemplate/template_namelist.h	/^class  TemplateNamelist {$/;"	c	namespace:ctemplate
+TemplateSearchPath	ctemplate/template_cache.h	/^  typedef std::vector<std::string> TemplateSearchPath;$/;"	t	class:ctemplate::TemplateCache
+TemplateState	ctemplate/template.h	/^enum TemplateState { TS_UNUSED, TS_EMPTY, TS_ERROR, TS_READY };$/;"	g	namespace:ctemplate
+TemplateString	ctemplate/template_string.h	/^  TemplateString(const StaticTemplateString& s)$/;"	f	class:ctemplate::TemplateString
+TemplateString	ctemplate/template_string.h	/^  TemplateString(const char* s)$/;"	f	class:ctemplate::TemplateString
+TemplateString	ctemplate/template_string.h	/^  TemplateString(const char* s, size_t slen)$/;"	f	class:ctemplate::TemplateString
+TemplateString	ctemplate/template_string.h	/^  TemplateString(const char* s, size_t slen, bool is_immutable, TemplateId id)$/;"	f	class:ctemplate::TemplateString
+TemplateString	ctemplate/template_string.h	/^  TemplateString(const std::string& s)$/;"	f	class:ctemplate::TemplateString
+TemplateString	ctemplate/template_string.h	/^class  TemplateString {$/;"	c	namespace:ctemplate
+TextTemplateAnnotator	ctemplate/template_annotator.h	/^  TextTemplateAnnotator() { }$/;"	f	class:ctemplate::TextTemplateAnnotator
+TextTemplateAnnotator	ctemplate/template_annotator.h	/^class  TextTemplateAnnotator : public TemplateAnnotator {$/;"	c	namespace:ctemplate
+ToString	ctemplate/template_string.h	/^  std::string ToString() const { return std::string(ptr_, length_); }$/;"	f	class:ctemplate::TemplateString
+UrlQueryEscape	ctemplate/template_modifiers.h	/^class  UrlQueryEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+ValidateUrl	ctemplate/template_modifiers.h	/^  explicit ValidateUrl(const TemplateModifier& chained_modifier,$/;"	f	class:ctemplate::ValidateUrl
+ValidateUrl	ctemplate/template_modifiers.h	/^class  ValidateUrl : public TemplateModifier {$/;"	c	namespace:ctemplate
+VariableDict	ctemplate/template_dictionary.h	/^      VariableDict;$/;"	t	class:ctemplate::TemplateDictionary
+WARNING	oj_log.hpp	/^    WARNING,$/;"	e	enum:LogLevel
+WSInit	httplib.h	/^    WSInit() {$/;"	f	class:httplib::detail::WSInit
+WSInit	httplib.h	/^class WSInit {$/;"	c	namespace:httplib::detail
+XmlEscape	ctemplate/template_modifiers.h	/^class  XmlEscape : public TemplateModifier {$/;"	c	namespace:ctemplate
+_CRT_NONSTDC_NO_DEPRECATE	httplib.h	17;"	d
+_CRT_SECURE_NO_WARNINGS	httplib.h	13;"	d
+addAtHead	oj_data/1/header.cpp	/^        void addAtHead(int val) {$/;"	f	class:MyLinkedList
+addAtIndex	oj_data/1/header.cpp	/^        void addAtIndex(int index, int val) {$/;"	f	class:MyLinkedList
+addAtTail	oj_data/1/header.cpp	/^        void addAtTail(int val) {$/;"	f	class:MyLinkedList
+annotate	ctemplate/per_expand_data.h	/^  bool annotate() const { return annotate_path_ != NULL; }$/;"	f	class:ctemplate::PerExpandData
+annotate_path	ctemplate/per_expand_data.h	/^  const char* annotate_path() const { return annotate_path_; }$/;"	f	class:ctemplate::PerExpandData
+annotate_path_	ctemplate/per_expand_data.h	/^  const char* annotate_path_;$/;"	m	class:ctemplate::PerExpandData
+annotator_	ctemplate/per_expand_data.h	/^  TemplateAnnotator* annotator_;$/;"	m	class:ctemplate::PerExpandData
+append	httplib.h	/^    void append(char c) {$/;"	f	class:httplib::detail::stream_line_reader
+arena_	ctemplate/template_dictionary.h	/^  class UnsafeArena* const arena_;$/;"	m	class:ctemplate::TemplateDictionary
+assign	ctemplate/str_ref.h	/^  void assign(const void* b, const void* e)$/;"	f	class:ctemplate::str_ref_basic
+assign	ctemplate/str_ref.h	/^  void assign(const void* b, size_t sz)$/;"	f	class:ctemplate::str_ref_basic
+bad_syntax_list_	ctemplate/template_namelist.h	/^  static SyntaxListType *bad_syntax_list_;$/;"	m	class:ctemplate::TemplateNamelist
+base_dir_	httplib.h	/^    std::string base_dir_;$/;"	m	class:httplib::Server
+begin	ctemplate/str_ref.h	/^  T begin() const$/;"	f	class:ctemplate::str_ref_basic
+begin	ctemplate/template_string.h	/^  const char* begin() const {$/;"	f	class:ctemplate::TemplateString
+begin_	ctemplate/str_ref.h	/^  T begin_;$/;"	m	class:ctemplate::str_ref_basic
+begin_	ctemplate/template_dictionary.h	/^    T begin_;$/;"	m	class:ctemplate::TemplateDictionary::Iterator
+bind_internal	httplib.h	/^inline int Server::bind_internal(const char* host, int port, int socket_flags)$/;"	f	class:httplib::Server
+bind_to_any_port	httplib.h	/^inline int Server::bind_to_any_port(const char* host, int socket_flags)$/;"	f	class:httplib::Server
+body	httplib.h	/^    std::string    body;$/;"	m	struct:httplib::Request
+body	httplib.h	/^    std::string body;$/;"	m	struct:httplib::Response
+bucket_size	ctemplate/template_string.h	/^    static const size_t bucket_size = 4;    \/\/ These are required by MSVC$/;"	m	struct:ctemplate::StaticTemplateString::Hasher
+bucket_size	ctemplate/template_string.h	/^  static const size_t bucket_size = 4;    \/\/ These are required by MSVC$/;"	m	struct:ctemplate::StringHash
+bucket_size	ctemplate/template_string.h	/^  static const size_t bucket_size = 4;    \/\/ These are required by MSVC$/;"	m	struct:ctemplate::TemplateIdHasher
+bufend	ctemplate/template.h	/^    const char* bufend;$/;"	m	struct:ctemplate::Template::ParseState
+buffer	httplib.h	/^    std::string buffer;$/;"	m	class:httplib::BufferStream
+bufstart	ctemplate/template.h	/^    const char* bufstart;$/;"	m	struct:ctemplate::Template::ParseState
+can_compress	httplib.h	/^inline bool can_compress(const std::string& content_type) {$/;"	f	namespace:httplib::detail
+chained_modifier_	ctemplate/template_modifiers.h	/^  const TemplateModifier& chained_modifier_;$/;"	m	class:ctemplate::ValidateUrl
+ci	httplib.h	/^struct ci {$/;"	s	namespace:httplib::detail
+clear	ctemplate/str_ref.h	/^  void clear()$/;"	f	class:ctemplate::str_ref_basic
+close_socket	httplib.h	/^inline int close_socket(socket_t sock)$/;"	f	namespace:httplib::detail
+compress	httplib.h	/^inline void compress(std::string& content)$/;"	f	namespace:httplib::detail
+content_type	httplib.h	/^    std::string content_type;$/;"	m	struct:httplib::MultipartFile
+create_client_socket	httplib.h	/^inline socket_t Client::create_client_socket() const$/;"	f	class:httplib::Client
+create_server_socket	httplib.h	/^inline socket_t Server::create_server_socket(const char* host, int port, int socket_flags) const$/;"	f	class:httplib::Server
+create_socket	httplib.h	/^socket_t create_socket(const char* host, int port, Fn fn, int socket_flags = 0)$/;"	f	namespace:httplib::detail
+ctemplate	ctemplate/per_expand_data.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/str_ref.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_annotator.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_cache.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_dictionary.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_dictionary_interface.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_emitter.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_enums.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_modifiers.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_namelist.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_pathops.h	/^namespace ctemplate {$/;"	n
+ctemplate	ctemplate/template_string.h	/^namespace ctemplate {$/;"	n
+ctx_	httplib.h	/^    SSL_CTX* ctx_;$/;"	m	class:httplib::SSLClient
+ctx_	httplib.h	/^    SSL_CTX* ctx_;$/;"	m	class:httplib::SSLServer
+ctx_mutex_	httplib.h	/^    std::mutex ctx_mutex_;$/;"	m	class:httplib::SSLClient
+ctx_mutex_	httplib.h	/^    std::mutex ctx_mutex_;$/;"	m	class:httplib::SSLServer
+current_delimiters	ctemplate/template.h	/^    MarkerDelimiters current_delimiters;$/;"	m	struct:ctemplate::Template::ParseState
+data	ctemplate/str_ref.h	/^  T data() const$/;"	f	class:ctemplate::str_ref_basic
+data	ctemplate/template_string.h	/^  const char* data() const {$/;"	f	class:ctemplate::TemplateString
+data_ref	ctemplate/str_ref.h	/^typedef str_ref_basic<const unsigned char*> data_ref;$/;"	t	namespace:ctemplate
+decode_url	httplib.h	/^inline std::string decode_url(const std::string& s)$/;"	f	namespace:httplib::detail
+decompress	httplib.h	/^inline void decompress(std::string& content)$/;"	f	namespace:httplib::detail
+deleteAtIndex	oj_data/1/header.cpp	/^        void deleteAtIndex(int index) {$/;"	f	class:MyLinkedList
+delete_handlers_	httplib.h	/^    Handlers    delete_handlers_;$/;"	m	class:httplib::Server
+detail	httplib.h	/^namespace detail {$/;"	n	namespace:httplib
+dict_	ctemplate/template_dictionary.h	/^    TemplateDictionary& dict_;$/;"	m	class:ctemplate::TemplateDictionary::SetProxy
+dispatch_request	httplib.h	/^inline bool Server::dispatch_request(Request& req, Response& res, Handlers& handlers)$/;"	f	class:httplib::Server
+do_not_use_directly_	ctemplate/template_string.h	/^  } do_not_use_directly_;$/;"	m	struct:ctemplate::StaticTemplateString	typeref:struct:ctemplate::StaticTemplateString::__anon2
+empty	ctemplate/str_ref.h	/^  bool empty() const$/;"	f	class:ctemplate::str_ref_basic
+empty	ctemplate/template_string.h	/^  inline bool empty() const {$/;"	f	class:ctemplate::TemplateString
+empty	ctemplate/template_string.h	/^  inline bool empty() const {$/;"	f	struct:ctemplate::StaticTemplateString
+empty_string_	ctemplate/template_dictionary.h	/^  static TemplateString* empty_string_;  \/\/ what is returned on lookup misses$/;"	m	class:ctemplate::TemplateDictionary
+encode_url	httplib.h	/^inline std::string encode_url(const std::string& s)$/;"	f	namespace:httplib::detail
+end	ctemplate/str_ref.h	/^  T end() const$/;"	f	class:ctemplate::str_ref_basic
+end	ctemplate/template_string.h	/^  const char* end() const {$/;"	f	class:ctemplate::TemplateString
+end_	ctemplate/str_ref.h	/^  T end_;$/;"	m	class:ctemplate::str_ref_basic
+end_	ctemplate/template_dictionary.h	/^    const T end_;$/;"	m	class:ctemplate::TemplateDictionary::Iterator
+end_marker	ctemplate/template.h	/^    const char* end_marker;$/;"	m	struct:ctemplate::Template::MarkerDelimiters
+end_marker_len	ctemplate/template.h	/^    size_t end_marker_len;$/;"	m	struct:ctemplate::Template::MarkerDelimiters
+error_handler_	httplib.h	/^    Handler     error_handler_;$/;"	m	class:httplib::Server
+expand_modifier_	ctemplate/per_expand_data.h	/^  const TemplateModifier* expand_modifier_;$/;"	m	class:ctemplate::PerExpandData
+file_extension	httplib.h	/^inline std::string file_extension(const std::string& path)$/;"	f	namespace:httplib::detail
+filename	httplib.h	/^    std::string filename;$/;"	m	struct:httplib::MultipartFile
+filename_	ctemplate/template_dictionary.h	/^  const char* filename_;$/;"	m	class:ctemplate::TemplateDictionary
+filename_mtime_	ctemplate/template.h	/^  time_t filename_mtime_;   \/\/ lastmod time for filename last time we loaded it$/;"	m	class:ctemplate::Template
+files	httplib.h	/^    MultipartFiles files;$/;"	m	struct:httplib::Request
+find_content_type	httplib.h	/^inline const char* find_content_type(const std::string& path)$/;"	f	namespace:httplib::detail
+fixed_buffer_	httplib.h	/^    char* fixed_buffer_;$/;"	m	class:httplib::detail::stream_line_reader
+fixed_buffer_size_	httplib.h	/^    const size_t fixed_buffer_size_;$/;"	m	class:httplib::detail::stream_line_reader
+fixed_buffer_used_size_	httplib.h	/^    size_t fixed_buffer_used_size_;$/;"	m	class:httplib::detail::stream_line_reader
+from_hex_to_i	httplib.h	/^inline bool from_hex_to_i(const std::string& s, size_t i, size_t cnt, int& val)$/;"	f	namespace:httplib::detail
+from_i_to_hex	httplib.h	/^inline std::string from_i_to_hex(uint64_t n)$/;"	f	namespace:httplib::detail
+get	oj_data/1/header.cpp	/^        int get(int index) {$/;"	f	class:MyLinkedList
+get_buffer	httplib.h	/^inline const std::string& BufferStream::get_buffer() const {$/;"	f	class:httplib::BufferStream
+get_file_value	httplib.h	/^inline MultipartFile Request::get_file_value(const char* key) const$/;"	f	class:httplib::Request
+get_handlers_	httplib.h	/^    Handlers    get_handlers_;$/;"	m	class:httplib::Server
+get_header_value	httplib.h	/^inline const char* get_header_value($/;"	f	namespace:httplib::detail
+get_header_value	httplib.h	/^inline std::string Request::get_header_value(const char* key) const$/;"	f	class:httplib::Request
+get_header_value	httplib.h	/^inline std::string Response::get_header_value(const char* key) const$/;"	f	class:httplib::Response
+get_header_value_int	httplib.h	/^inline int get_header_value_int(const Headers& headers, const char* key, int def = 0)$/;"	f	namespace:httplib::detail
+get_param_value	httplib.h	/^inline std::string Request::get_param_value(const char* key) const$/;"	f	class:httplib::Request
+get_remote_addr	httplib.h	/^inline std::string BufferStream::get_remote_addr() const {$/;"	f	class:httplib::BufferStream
+get_remote_addr	httplib.h	/^inline std::string SSLSocketStream::get_remote_addr() const {$/;"	f	class:httplib::SSLSocketStream
+get_remote_addr	httplib.h	/^inline std::string SocketStream::get_remote_addr() const {$/;"	f	class:httplib::SocketStream
+get_remote_addr	httplib.h	/^inline std::string get_remote_addr(socket_t sock) {$/;"	f	namespace:httplib::detail
+get_template_calls_	ctemplate/template_cache.h	/^  TemplateCallMap* get_template_calls_;$/;"	m	class:ctemplate::TemplateCache
+getline	httplib.h	/^    bool getline() {$/;"	f	class:httplib::detail::stream_line_reader
+global_dict_	ctemplate/template_dictionary.h	/^  static GlobalDict* global_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+glowable_buffer_	httplib.h	/^    std::string glowable_buffer_;$/;"	m	class:httplib::detail::stream_line_reader
+google_ctemplate_streamhtmlparser	ctemplate/template.h	/^namespace google_ctemplate_streamhtmlparser {$/;"	n
+handle_file_request	httplib.h	/^inline bool Server::handle_file_request(Request& req, Response& res)$/;"	f	class:httplib::Server
+has_file	httplib.h	/^inline bool Request::has_file(const char* key) const$/;"	f	class:httplib::Request
+has_header	httplib.h	/^inline bool Request::has_header(const char* key) const$/;"	f	class:httplib::Request
+has_header	httplib.h	/^inline bool Response::has_header(const char* key) const$/;"	f	class:httplib::Response
+has_header	httplib.h	/^inline bool has_header(const Headers& headers, const char* key)$/;"	f	namespace:httplib::detail
+has_param	httplib.h	/^inline bool Request::has_param(const char* key) const$/;"	f	class:httplib::Request
+headers	httplib.h	/^    Headers        headers;$/;"	m	struct:httplib::Request
+headers	httplib.h	/^    Headers     headers;$/;"	m	struct:httplib::Response
+host_	httplib.h	/^    const std::string host_;$/;"	m	class:httplib::Client
+host_and_port_	httplib.h	/^    const std::string host_and_port_;$/;"	m	class:httplib::Client
+htmlparser_	ctemplate/template.h	/^  google_ctemplate_streamhtmlparser::HtmlParser *htmlparser_;$/;"	m	class:ctemplate::Template
+httplib	httplib.h	/^namespace httplib$/;"	n
+id_	ctemplate/template_string.h	/^    mutable TemplateId id_;  \/\/ sometimes lazily-initialized.$/;"	m	struct:ctemplate::StaticTemplateString::__anon2
+id_	ctemplate/template_string.h	/^  TemplateId id_;$/;"	m	class:ctemplate::TemplateString
+id_	oj_model.hpp	/^    std::string id_;$/;"	m	struct:Question
+include_dict_	ctemplate/template_dictionary.h	/^  IncludeDict* include_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+initial_context_	ctemplate/template.h	/^  TemplateContext initial_context_;$/;"	m	class:ctemplate::Template
+is_connection_error	httplib.h	/^inline bool is_connection_error()$/;"	f	namespace:httplib::detail
+is_dir	httplib.h	/^inline bool is_dir(const std::string& path)$/;"	f	namespace:httplib::detail
+is_file	httplib.h	/^inline bool is_file(const std::string& path)$/;"	f	namespace:httplib::detail
+is_frozen_	ctemplate/template_cache.h	/^  bool is_frozen_;$/;"	m	class:ctemplate::TemplateCache
+is_hex	httplib.h	/^inline bool is_hex(char c, int& v)$/;"	f	namespace:httplib::detail
+is_immutable	ctemplate/template_string.h	/^  inline bool is_immutable() const {$/;"	f	class:ctemplate::TemplateString
+is_immutable_	ctemplate/template_string.h	/^  bool is_immutable_;$/;"	m	class:ctemplate::TemplateString
+is_running	httplib.h	/^inline bool Server::is_running() const$/;"	f	class:httplib::Server
+is_running_	httplib.h	/^    bool        is_running_;$/;"	m	class:httplib::Server
+is_valid	httplib.h	/^inline bool Client::is_valid() const$/;"	f	class:httplib::Client
+is_valid	httplib.h	/^inline bool SSLClient::is_valid() const$/;"	f	class:httplib::SSLClient
+is_valid	httplib.h	/^inline bool SSLServer::is_valid() const$/;"	f	class:httplib::SSLServer
+is_valid	httplib.h	/^inline bool Server::is_valid() const$/;"	f	class:httplib::Server
+is_valid_path	httplib.h	/^inline bool is_valid_path(const std::string& path) {$/;"	f	namespace:httplib::detail
+kIllegalTemplateId	ctemplate/template_string.h	/^const TemplateId kIllegalTemplateId = 0;$/;"	m	namespace:ctemplate
+kIndent	ctemplate/template_dictionary_interface.h	/^const int kIndent = 2;  \/\/ num spaces to indent each level -- used with dump$/;"	m	namespace:ctemplate
+kNumSafeWhitelistedVariables	ctemplate/template.h	/^  static const size_t kNumSafeWhitelistedVariables;$/;"	m	class:ctemplate::Template
+kSafeWhitelistedVariables	ctemplate/template.h	/^  static const char * const kSafeWhitelistedVariables[];$/;"	m	class:ctemplate::Template
+kStsEmpty	ctemplate/template_string.h	/^const StaticTemplateString kStsEmpty =$/;"	m	namespace:ctemplate
+kTemplateStringInitializedFlag	ctemplate/template_string.h	/^const TemplateId kTemplateStringInitializedFlag = 1;$/;"	m	namespace:ctemplate
+kUnsafeImgSrcUrlReplacement	ctemplate/template_modifiers.h	/^  static const char* const kUnsafeImgSrcUrlReplacement;$/;"	m	class:ctemplate::ValidateUrl
+kUnsafeUrlReplacement	ctemplate/template_modifiers.h	/^  static const char* const kUnsafeUrlReplacement;$/;"	m	class:ctemplate::ValidateUrl
+keep_alive_max_count_	httplib.h	/^    size_t keep_alive_max_count_;$/;"	m	class:httplib::Server
+length	httplib.h	/^    size_t length = 0;$/;"	m	struct:httplib::MultipartFile
+length_	ctemplate/template_string.h	/^    size_t length_;$/;"	m	struct:ctemplate::StaticTemplateString::__anon2
+length_	ctemplate/template_string.h	/^  size_t length_;$/;"	m	class:ctemplate::TemplateString
+listen	httplib.h	/^inline bool Server::listen(const char* host, int port, int socket_flags)$/;"	f	class:httplib::Server
+listen_after_bind	httplib.h	/^inline bool Server::listen_after_bind() {$/;"	f	class:httplib::Server
+listen_internal	httplib.h	/^inline bool Server::listen_internal()$/;"	f	class:httplib::Server
+logger_	httplib.h	/^    Logger      logger_;$/;"	m	class:httplib::Server
+main	oj_server.cpp	/^int main()$/;"	f
+make_range_header	httplib.h	/^inline std::pair<std::string, std::string> make_range_header(uint64_t value, Args... args)$/;"	f	namespace:httplib
+make_range_header_core	httplib.h	/^inline void make_range_header_core(std::string& field, uint64_t value)$/;"	f	namespace:httplib::detail
+make_range_header_core	httplib.h	/^inline void make_range_header_core(std::string& field, uint64_t value1, uint64_t value2, Args... args)$/;"	f	namespace:httplib::detail
+make_range_header_core	httplib.h	/^inline void make_range_header_core(std::string&) {}$/;"	f	namespace:httplib::detail
+map_	ctemplate/per_expand_data.h	/^  DataMap* map_;$/;"	m	class:ctemplate::PerExpandData
+matches	httplib.h	/^    Match          matches;$/;"	m	struct:httplib::Request
+method	httplib.h	/^    std::string    method;$/;"	m	struct:httplib::Request
+min_buckets	ctemplate/template_string.h	/^    static const size_t min_buckets = 8;    \/\/ 4 and 8 are the defaults$/;"	m	struct:ctemplate::StaticTemplateString::Hasher
+min_buckets	ctemplate/template_string.h	/^  static const size_t min_buckets = 8;    \/\/ 4 and 8 are the defaults$/;"	m	struct:ctemplate::StringHash
+min_buckets	ctemplate/template_string.h	/^  static const size_t min_buckets = 8;    \/\/ 4 and 8 are the defaults$/;"	m	struct:ctemplate::TemplateIdHasher
+missing_list_	ctemplate/template_namelist.h	/^  static MissingListType *missing_list_;$/;"	m	class:ctemplate::TemplateNamelist
+model_map_	oj_model.hpp	/^        std::unordered_map<std::string, Question> model_map_;$/;"	m	class:OjModel
+mutex_	ctemplate/template_cache.h	/^  Mutex* const mutex_;$/;"	m	class:ctemplate::TemplateCache
+name	ctemplate/template_dictionary.h	/^  std::string name() const {$/;"	f	class:ctemplate::TemplateDictionary
+name_	ctemplate/template_dictionary.h	/^  TemplateString name_;        \/\/ points into the arena, or to static memory$/;"	m	class:ctemplate::TemplateDictionary
+name_	oj_model.hpp	/^    std::string name_;$/;"	m	struct:Question
+namelist_	ctemplate/template_namelist.h	/^  static NameListType *namelist_;$/;"	m	class:ctemplate::TemplateNamelist
+num_deletes	ctemplate/template.h	/^  static int num_deletes() { return num_deletes_; }$/;"	f	class:ctemplate::Template
+num_deletes_	ctemplate/template.h	/^  static int num_deletes_;  \/\/ how many times the destructor has been called$/;"	m	class:ctemplate::Template
+offset	httplib.h	/^    size_t offset = 0;$/;"	m	struct:httplib::MultipartFile
+operator ()	ctemplate/template_modifiers.h	/^  std::string operator()(const char* in, size_t inlen, const std::string& arg="") const {$/;"	f	class:ctemplate::TemplateModifier
+operator ()	ctemplate/template_modifiers.h	/^  std::string operator()(const std::string& in, const std::string& arg="") const {$/;"	f	class:ctemplate::TemplateModifier
+operator ()	ctemplate/template_string.h	/^  bool operator()(TemplateId a, TemplateId b) const {   \/\/ <, for MSVC$/;"	f	struct:ctemplate::TemplateIdHasher
+operator ()	ctemplate/template_string.h	/^  inline bool operator()(const char* a, const char* b) const {$/;"	f	struct:ctemplate::StringHash
+operator ()	ctemplate/template_string.h	/^  inline bool operator()(const std::string& a, const std::string& b) const {$/;"	f	struct:ctemplate::StringHash
+operator ()	ctemplate/template_string.h	/^  inline size_t operator()(const char* s) const {$/;"	f	struct:ctemplate::StringHash
+operator ()	ctemplate/template_string.h	/^  inline size_t operator()(const std::string& s) const {$/;"	f	struct:ctemplate::StringHash
+operator ()	ctemplate/template_string.h	/^  size_t operator()(TemplateId id) const {$/;"	f	struct:ctemplate::TemplateIdHasher
+operator ()	ctemplate/template_string.h	/^inline bool StaticTemplateString::Hasher::operator()($/;"	f	class:ctemplate::StaticTemplateString::Hasher
+operator ()	ctemplate/template_string.h	/^inline size_t StaticTemplateString::Hasher::operator()($/;"	f	class:ctemplate::StaticTemplateString::Hasher
+operator ()	httplib.h	/^    bool operator() (const std::string & s1, const std::string & s2) const {$/;"	f	struct:httplib::detail::ci
+operator =	ctemplate/template_dictionary.h	/^    void operator=(long value) {$/;"	f	class:ctemplate::TemplateDictionary::SetProxy
+operator =	ctemplate/template_dictionary.h	/^    void operator=(str_ref value) {$/;"	f	class:ctemplate::TemplateDictionary::SetProxy
+operator ==	ctemplate/template_string.h	/^  inline bool operator==(const TemplateString& x) const {$/;"	f	class:ctemplate::TemplateString
+operator ==	ctemplate/template_string.h	/^inline bool StaticTemplateString::operator==($/;"	f	class:ctemplate::StaticTemplateString
+operator []	ctemplate/template_dictionary.h	/^  SetProxy operator[](const TemplateString& variable) {$/;"	f	class:ctemplate::TemplateDictionary
+options_handlers_	httplib.h	/^    Handlers    options_handlers_;$/;"	m	class:httplib::Server
+original_filename_	ctemplate/template.h	/^  const std::string original_filename_;$/;"	m	class:ctemplate::Template
+outbuf_	ctemplate/template_emitter.h	/^  std::string* const outbuf_;$/;"	m	class:ctemplate::StringEmitter::std
+params	httplib.h	/^    Params         params;$/;"	m	struct:httplib::Request
+parent_dict_	ctemplate/template_dictionary.h	/^  TemplateDictionary* parent_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+parse_multipart_boundary	httplib.h	/^inline bool parse_multipart_boundary(const std::string& content_type, std::string& boundary)$/;"	f	namespace:httplib::detail
+parse_multipart_formdata	httplib.h	/^inline bool parse_multipart_formdata($/;"	f	namespace:httplib::detail
+parse_query_text	httplib.h	/^inline void parse_query_text(const std::string& s, Params& params)$/;"	f	namespace:httplib::detail
+parse_request_line	httplib.h	/^inline bool Server::parse_request_line(const char* s, Request& req)$/;"	f	class:httplib::Server
+parse_state_	ctemplate/template.h	/^  ParseState parse_state_;$/;"	m	class:ctemplate::Template
+parsed_template_cache_	ctemplate/template_cache.h	/^  TemplateMap* parsed_template_cache_;$/;"	m	class:ctemplate::TemplateCache
+path	httplib.h	/^    std::string    path;$/;"	m	struct:httplib::Request
+path_	oj_model.hpp	/^    std::string path_;$/;"	m	struct:Question
+phase	ctemplate/template.h	/^    enum { PS_UNUSED, GETTING_TEXT, GETTING_NAME } phase;$/;"	m	struct:ctemplate::Template::ParseState	typeref:enum:ctemplate::Template::ParseState::__anon1
+port_	httplib.h	/^    const int         port_;$/;"	m	class:httplib::Client
+post_handlers_	httplib.h	/^    Handlers    post_handlers_;$/;"	m	class:httplib::Server
+process_request	httplib.h	/^inline bool Client::process_request(Stream& strm, Request& req, Response& res, bool& connection_close)$/;"	f	class:httplib::Client
+process_request	httplib.h	/^inline bool Server::process_request(Stream& strm, bool last_connection, bool& connection_close)$/;"	f	class:httplib::Server
+progress	httplib.h	/^    Progress       progress;$/;"	m	struct:httplib::Request
+ptr	httplib.h	/^    const char* ptr() const {$/;"	f	class:httplib::detail::stream_line_reader
+ptr_	ctemplate/template_string.h	/^    const char* ptr_;$/;"	m	struct:ctemplate::StaticTemplateString::__anon2
+ptr_	ctemplate/template_string.h	/^  const char* ptr_;$/;"	m	class:ctemplate::TemplateString
+put_handlers_	httplib.h	/^    Handlers    put_handlers_;$/;"	m	class:httplib::Server
+read	httplib.h	/^inline int BufferStream::read(char* ptr, size_t size)$/;"	f	class:httplib::BufferStream
+read	httplib.h	/^inline int SSLSocketStream::read(char* ptr, size_t size)$/;"	f	class:httplib::SSLSocketStream
+read	httplib.h	/^inline int SocketStream::read(char* ptr, size_t size)$/;"	f	class:httplib::SocketStream
+read_and_close_socket	httplib.h	/^inline bool Client::read_and_close_socket(socket_t sock, Request& req, Response& res)$/;"	f	class:httplib::Client
+read_and_close_socket	httplib.h	/^inline bool SSLClient::read_and_close_socket(socket_t sock, Request& req, Response& res)$/;"	f	class:httplib::SSLClient
+read_and_close_socket	httplib.h	/^inline bool SSLServer::read_and_close_socket(socket_t sock)$/;"	f	class:httplib::SSLServer
+read_and_close_socket	httplib.h	/^inline bool Server::read_and_close_socket(socket_t sock)$/;"	f	class:httplib::Server
+read_and_close_socket	httplib.h	/^inline bool read_and_close_socket(socket_t sock, size_t keep_alive_max_count, T callback)$/;"	f	namespace:httplib::detail
+read_and_close_socket_ssl	httplib.h	/^inline bool read_and_close_socket_ssl($/;"	f	namespace:httplib::detail
+read_content	httplib.h	/^bool read_content(Stream& strm, T& x, Progress progress = Progress())$/;"	f	namespace:httplib::detail
+read_content_chunked	httplib.h	/^inline bool read_content_chunked(Stream& strm, std::string& out)$/;"	f	namespace:httplib::detail
+read_content_with_length	httplib.h	/^inline bool read_content_with_length(Stream& strm, std::string& out, size_t len, Progress progress)$/;"	f	namespace:httplib::detail
+read_content_without_length	httplib.h	/^inline bool read_content_without_length(Stream& strm, std::string& out)$/;"	f	namespace:httplib::detail
+read_file	httplib.h	/^inline void read_file(const std::string& path, std::string& out)$/;"	f	namespace:httplib::detail
+read_headers	httplib.h	/^inline bool read_headers(Stream& strm, Headers& headers)$/;"	f	namespace:httplib::detail
+read_response_line	httplib.h	/^inline bool Client::read_response_line(Stream& strm, Response& res)$/;"	f	class:httplib::Client
+resolved_filename_	ctemplate/template.h	/^  std::string resolved_filename_;$/;"	m	class:ctemplate::Template
+routing	httplib.h	/^inline bool Server::routing(Request& req, Response& res)$/;"	f	class:httplib::Server
+running_threads_	httplib.h	/^    int         running_threads_;$/;"	m	class:httplib::Server
+running_threads_mutex_	httplib.h	/^    std::mutex  running_threads_mutex_;$/;"	m	class:httplib::Server
+search_path_	ctemplate/template_cache.h	/^  TemplateSearchPath search_path_;$/;"	m	class:ctemplate::TemplateCache
+search_path_mutex_	ctemplate/template_cache.h	/^  Mutex* const search_path_mutex_;$/;"	m	class:ctemplate::TemplateCache
+section_dict_	ctemplate/template_dictionary.h	/^  SectionDict* section_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+select_read	httplib.h	/^inline int select_read(socket_t sock, time_t sec, time_t usec)$/;"	f	namespace:httplib::detail
+send	httplib.h	/^inline bool Client::send(Request& req, Response& res)$/;"	f	class:httplib::Client
+set_base_dir	httplib.h	/^inline bool Server::set_base_dir(const char* path)$/;"	f	class:httplib::Server
+set_content	httplib.h	/^inline void Response::set_content(const char* s, size_t n, const char* content_type)$/;"	f	class:httplib::Response
+set_content	httplib.h	/^inline void Response::set_content(const std::string& s, const char* content_type)$/;"	f	class:httplib::Response
+set_error_handler	httplib.h	/^inline void Server::set_error_handler(Handler handler)$/;"	f	class:httplib::Server
+set_header	httplib.h	/^inline void Request::set_header(const char* key, const char* val)$/;"	f	class:httplib::Request
+set_header	httplib.h	/^inline void Response::set_header(const char* key, const char* val)$/;"	f	class:httplib::Response
+set_keep_alive_max_count	httplib.h	/^inline void Server::set_keep_alive_max_count(size_t count)$/;"	f	class:httplib::Server
+set_logger	httplib.h	/^inline void Server::set_logger(Logger logger)$/;"	f	class:httplib::Server
+set_nonblocking	httplib.h	/^inline void set_nonblocking(socket_t sock, bool nonblocking)$/;"	f	namespace:httplib::detail
+set_redirect	httplib.h	/^inline void Response::set_redirect(const char* url)$/;"	f	class:httplib::Response
+should_delete_arena_	ctemplate/template_dictionary.h	/^  bool should_delete_arena_;   \/\/ only true if we 'new arena' in constructor$/;"	m	class:ctemplate::TemplateDictionary
+shutdown_socket	httplib.h	/^inline int shutdown_socket(socket_t sock)$/;"	f	namespace:httplib::detail
+size	ctemplate/str_ref.h	/^  size_t size() const$/;"	f	class:ctemplate::str_ref_basic
+size	ctemplate/template_string.h	/^  size_t size() const {$/;"	f	class:ctemplate::TemplateString
+snprintf	httplib.h	21;"	d
+sock_	httplib.h	/^    socket_t sock_;$/;"	m	class:httplib::SSLSocketStream
+sock_	httplib.h	/^    socket_t sock_;$/;"	m	class:httplib::SocketStream
+socket_t	httplib.h	/^typedef SOCKET socket_t;$/;"	t
+socket_t	httplib.h	/^typedef int socket_t;$/;"	t
+split	httplib.h	/^void split(const char* b, const char* e, char d, Fn fn)$/;"	f	namespace:httplib::detail
+ssl_	httplib.h	/^    SSL* ssl_;$/;"	m	class:httplib::SSLSocketStream
+sslinit_	httplib.h	/^static SSLInit sslinit_;$/;"	m	namespace:httplib::detail
+star_	oj_model.hpp	/^    std::string star_;$/;"	m	struct:Question
+start_marker	ctemplate/template.h	/^    const char* start_marker;$/;"	m	struct:ctemplate::Template::MarkerDelimiters
+start_marker_len	ctemplate/template.h	/^    size_t start_marker_len;$/;"	m	struct:ctemplate::Template::MarkerDelimiters
+state_	ctemplate/template.h	/^  TemplateState state_;$/;"	m	class:ctemplate::Template
+status	httplib.h	/^    int         status;$/;"	m	struct:httplib::Response
+status_message	httplib.h	/^inline const char* status_message(int status)$/;"	f	namespace:httplib::detail
+stop	httplib.h	/^inline void Server::stop()$/;"	f	class:httplib::Server
+str_ref	ctemplate/str_ref.h	/^typedef str_ref_basic<const char*> str_ref;$/;"	t	namespace:ctemplate
+str_ref_basic	ctemplate/str_ref.h	/^  str_ref_basic()$/;"	f	class:ctemplate::str_ref_basic
+str_ref_basic	ctemplate/str_ref.h	/^  str_ref_basic(const U& c)$/;"	f	class:ctemplate::str_ref_basic
+str_ref_basic	ctemplate/str_ref.h	/^  str_ref_basic(const char* b)$/;"	f	class:ctemplate::str_ref_basic
+str_ref_basic	ctemplate/str_ref.h	/^  str_ref_basic(const void* b, const void* e)$/;"	f	class:ctemplate::str_ref_basic
+str_ref_basic	ctemplate/str_ref.h	/^  str_ref_basic(const void* b, size_t sz)$/;"	f	class:ctemplate::str_ref_basic
+str_ref_basic	ctemplate/str_ref.h	/^class str_ref_basic$/;"	c	namespace:ctemplate
+strcasecmp	httplib.h	39;"	d
+stream_line_reader	httplib.h	/^    stream_line_reader(Stream& strm, char* fixed_buffer, size_t fixed_buffer_size)$/;"	f	class:httplib::detail::stream_line_reader
+stream_line_reader	httplib.h	/^class stream_line_reader {$/;"	c	namespace:httplib::detail
+streamcb	httplib.h	/^    std::function<std::string (uint64_t offset)> streamcb;$/;"	m	struct:httplib::Response
+strip_	ctemplate/template.h	/^  Strip strip_;$/;"	m	class:ctemplate::Template
+strm_	httplib.h	/^    Stream& strm_;$/;"	m	class:httplib::detail::stream_line_reader
+svr_sock_	httplib.h	/^    socket_t    svr_sock_;$/;"	m	class:httplib::Server
+target	httplib.h	/^    std::string    target;$/;"	m	struct:httplib::Request
+template_cache_	ctemplate/template.h	/^  TemplateCache* template_cache_;$/;"	m	class:ctemplate::Template
+template_expansion_modifier	ctemplate/per_expand_data.h	/^  const TemplateModifier* template_expansion_modifier() const {$/;"	f	class:ctemplate::PerExpandData
+template_global_dict_	ctemplate/template_dictionary.h	/^  TemplateDictionary* template_global_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+template_global_dict_owner_	ctemplate/template_dictionary.h	/^  TemplateDictionary* template_global_dict_owner_;$/;"	m	class:ctemplate::TemplateDictionary
+template_root_directory	ctemplate/template.h	/^  static std::string template_root_directory() {$/;"	f	class:ctemplate::Template
+template_text_	ctemplate/template.h	/^  const char* template_text_;$/;"	m	class:ctemplate::Template
+template_text_len_	ctemplate/template.h	/^  int template_text_len_;$/;"	m	class:ctemplate::Template
+timeout_sec_	httplib.h	/^    time_t            timeout_sec_;$/;"	m	class:httplib::Client
+to_lower	httplib.h	/^inline std::string to_lower(const char* beg, const char* end)$/;"	f	namespace:httplib::detail
+to_utf8	httplib.h	/^inline size_t to_utf8(int code, char* buff)$/;"	f	namespace:httplib::detail
+tree_	ctemplate/template.h	/^  class SectionTemplateNode *tree_;       \/\/ defined in template.cc$/;"	m	class:ctemplate::Template	typeref:class:ctemplate::Template::SectionTemplateNode
+unsafe_url_replacement_	ctemplate/template_modifiers.h	/^  const char* unsafe_url_replacement_;$/;"	m	class:ctemplate::ValidateUrl
+unsafe_url_replacement_length_	ctemplate/template_modifiers.h	/^  int unsafe_url_replacement_length_;$/;"	m	class:ctemplate::ValidateUrl
+v1_0	httplib.h	/^enum class HttpVersion { v1_0 = 0, v1_1 };$/;"	m	class:httplib::HttpVersion
+variable_	ctemplate/template_dictionary.h	/^    const TemplateString& variable_;$/;"	m	class:ctemplate::TemplateDictionary::SetProxy
+variable_dict_	ctemplate/template_dictionary.h	/^  VariableDict* variable_dict_;$/;"	m	class:ctemplate::TemplateDictionary
+version	httplib.h	/^    std::string    version;$/;"	m	struct:httplib::Request
+version	httplib.h	/^    std::string version;$/;"	m	struct:httplib::Response
+wait_until_socket_is_ready	httplib.h	/^inline bool wait_until_socket_is_ready(socket_t sock, time_t sec, time_t usec)$/;"	f	namespace:httplib::detail
+write	httplib.h	/^inline int BufferStream::write(const char* ptr)$/;"	f	class:httplib::BufferStream
+write	httplib.h	/^inline int BufferStream::write(const char* ptr, size_t size)$/;"	f	class:httplib::BufferStream
+write	httplib.h	/^inline int SSLSocketStream::write(const char* ptr)$/;"	f	class:httplib::SSLSocketStream
+write	httplib.h	/^inline int SSLSocketStream::write(const char* ptr, size_t size)$/;"	f	class:httplib::SSLSocketStream
+write	httplib.h	/^inline int SocketStream::write(const char* ptr)$/;"	f	class:httplib::SocketStream
+write	httplib.h	/^inline int SocketStream::write(const char* ptr, size_t size)$/;"	f	class:httplib::SocketStream
+write_format	httplib.h	/^inline void Stream::write_format(const char* fmt, const Args& ...args)$/;"	f	class:httplib::Stream
+write_headers	httplib.h	/^inline void write_headers(Stream& strm, const T& info)$/;"	f	namespace:httplib::detail
+write_request	httplib.h	/^inline void Client::write_request(Stream& strm, Request& req)$/;"	f	class:httplib::Client
+write_response	httplib.h	/^inline void Server::write_response(Stream& strm, bool last_connection, const Request& req, Response& res)$/;"	f	class:httplib::Server
+wsinit_	httplib.h	/^static WSInit wsinit_;$/;"	m	namespace:httplib::detail
+~BufferStream	httplib.h	/^    virtual ~BufferStream() {}$/;"	f	class:httplib::BufferStream
+~Client	httplib.h	/^inline Client::~Client()$/;"	f	class:httplib::Client
+~ExpandEmitter	ctemplate/template_emitter.h	/^  virtual ~ExpandEmitter() {}$/;"	f	class:ctemplate::ExpandEmitter
+~Iterator	ctemplate/template_dictionary.h	/^    virtual ~Iterator() { }$/;"	f	class:ctemplate::TemplateDictionary::Iterator
+~Iterator	ctemplate/template_dictionary_interface.h	/^    virtual ~Iterator() { }$/;"	f	class:ctemplate::TemplateDictionaryInterface::Iterator
+~SSLClient	httplib.h	/^inline SSLClient::~SSLClient()$/;"	f	class:httplib::SSLClient
+~SSLServer	httplib.h	/^inline SSLServer::~SSLServer()$/;"	f	class:httplib::SSLServer
+~SSLSocketStream	httplib.h	/^inline SSLSocketStream::~SSLSocketStream()$/;"	f	class:httplib::SSLSocketStream
+~Server	httplib.h	/^inline Server::~Server()$/;"	f	class:httplib::Server
+~SocketStream	httplib.h	/^inline SocketStream::~SocketStream()$/;"	f	class:httplib::SocketStream
+~Stream	httplib.h	/^    virtual ~Stream() {}$/;"	f	class:httplib::Stream
+~TemplateAnnotator	ctemplate/template_annotator.h	/^  virtual ~TemplateAnnotator() { }$/;"	f	class:ctemplate::TemplateAnnotator
+~TemplateDictionaryInterface	ctemplate/template_dictionary_interface.h	/^  virtual ~TemplateDictionaryInterface() {}$/;"	f	class:ctemplate::TemplateDictionaryInterface
+~WSInit	httplib.h	/^    ~WSInit() {$/;"	f	class:httplib::detail::WSInit
